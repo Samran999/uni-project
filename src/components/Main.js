@@ -6,9 +6,8 @@ import Register from './Register'
 
 export default function MainBox() {
     const [signin, setSignin] = useState(true)
-    const [register, setRegister] = useState(false)
-    console.log(signin)
-    console.log(register)
+    // const [register, setRegister] = useState(false)
+    
     return (
     <div className='Main'>
         <img src={img}/>
@@ -17,11 +16,11 @@ export default function MainBox() {
                 <h6>Authentication</h6>
                 <div className='SwitchCase'>
                 <button className='Switch' onClick={() => setSignin(true)}>Sign In</button>
-                <button className='Switch' onClick={() => setRegister(true)}>Register</button>
+                <button className='Switch' onClick={() => setSignin(!signin)}>Register</button>
                 </div>
             </div>
-            {signin ? <Signin/> : null}
-            {register ? <Register/> : null}
+            {signin ? <Signin/> : <Register/>}
+            
             
         </div>
     </div>

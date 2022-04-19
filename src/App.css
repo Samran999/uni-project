@@ -128,3 +128,27 @@ input{
     padding: 0.8rem;
     cursor: pointer;
 }
+@media screen and (max-width: 350px){
+    input{
+        width: 10rem;
+        font-size: 0.7rem;
+        padding: 0.5rem 0.2rem;
+    }
+    label{
+        font-size: 0.8rem;
+    }
+    .Main{
+        max-width: 12rem;
+    }
+    .Register{
+        width: 11rem;
+    }
+    .Switch{
+        font-size: 0.8rem;
+        width: 5rem;
+        padding: 0.5rem;
+    }
+}
+
+    
+
